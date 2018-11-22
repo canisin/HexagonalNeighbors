@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Coordinate.cs" />
+    <Compile Include="Data\Grid.cs" />
+    <Compile Include="Data\HexGrid.cs" />
+    <Compile Include="Data\HexTile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
