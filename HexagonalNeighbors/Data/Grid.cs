@@ -12,6 +12,10 @@ namespace HexagonalNeighbors.Data
 
         public void Add(int x, int y, T t) => Add(new Coordinate(x, y), t);
 
+        public void Remove(int x, int y) => Remove(new Coordinate(x, y));
+
         public bool TryGetValue(int x, int y, out T t) => TryGetValue(new Coordinate(x, y), out t);
+
+        public bool ContainsKey(int x, int y) => ContainsKey(new Coordinate(x, y));
     }
 }
