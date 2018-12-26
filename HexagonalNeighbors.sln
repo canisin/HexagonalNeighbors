@@ -5,16 +5,22 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexagonalNeighbors", "HexagonalNeighbors\HexagonalNeighbors.csproj", "{87DE93A3-9F1B-449F-BCAA-501CA7960D2E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HexagonalNatives", "HexagonalNatives\HexagonalNatives.vcxproj", "{B4C17C19-02ED-468F-998F-0A678E348616}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{87DE93A3-9F1B-449F-BCAA-501CA7960D2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{87DE93A3-9F1B-449F-BCAA-501CA7960D2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{87DE93A3-9F1B-449F-BCAA-501CA7960D2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{87DE93A3-9F1B-449F-BCAA-501CA7960D2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87DE93A3-9F1B-449F-BCAA-501CA7960D2E}.Debug|x64.ActiveCfg = Debug|x64
+		{87DE93A3-9F1B-449F-BCAA-501CA7960D2E}.Debug|x64.Build.0 = Debug|x64
+		{87DE93A3-9F1B-449F-BCAA-501CA7960D2E}.Release|x64.ActiveCfg = Release|x64
+		{87DE93A3-9F1B-449F-BCAA-501CA7960D2E}.Release|x64.Build.0 = Release|x64
+		{B4C17C19-02ED-468F-998F-0A678E348616}.Debug|x64.ActiveCfg = Debug|x64
+		{B4C17C19-02ED-468F-998F-0A678E348616}.Debug|x64.Build.0 = Debug|x64
+		{B4C17C19-02ED-468F-998F-0A678E348616}.Release|x64.ActiveCfg = Release|x64
+		{B4C17C19-02ED-468F-998F-0A678E348616}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
