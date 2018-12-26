@@ -69,11 +69,6 @@ namespace HexagonalNeighbors.Data
             }
         }
 
-        public bool CheckTiles()
-        {
-            throw new NotImplementedException();
-        }
-
         public void Draw()
         {
             var surface = new Grid<char>();
