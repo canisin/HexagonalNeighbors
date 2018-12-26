@@ -7,7 +7,7 @@ namespace HexagonalNeighbors.Data
     {
         public readonly Coordinate Coordinate;
 
-        public int? Value { get; set; }
+        public int Value { get; set; }
 
         public HexTile(int x, int y)
             : this(new Coordinate(x, y))
@@ -46,15 +46,12 @@ namespace HexagonalNeighbors.Data
 
         private void DrawValue(Grid<char> surface)
         {
-            if (!Value.HasValue)
-                return;
-
             //  __
             // /xx\
             // \__/
             //
 
-            var valueStr = $"{Value.Value,2}";
+            var valueStr = $"{Value,2}";
             if (valueStr.Length > 2)
                 throw new ArgumentOutOfRangeException();
 
