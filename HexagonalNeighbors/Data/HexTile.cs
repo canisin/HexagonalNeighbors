@@ -9,14 +9,14 @@ namespace HexagonalNeighbors.Data
 
         public int Value { get; set; }
 
-        public HexTile(int x, int y)
-            : this(new Coordinate(x, y))
-        {
-        }
-
         public HexTile(Coordinate coordinate)
         {
             Coordinate = coordinate;
+        }
+
+        public HexTile(int x, int y)
+            : this(new Coordinate(x, y))
+        {
         }
 
         public void Draw(Grid<char> surface)

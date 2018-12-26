@@ -18,28 +18,34 @@ namespace HexagonalNeighbors.Data
 
         public IEnumerable<HexTile> Tiles => _tiles.Values;
 
-        public bool CheckCoordinates(int x, int y) => _tiles.ContainsKey(x, y);
+        public bool CheckCoordinates(Coordinate c) => _tiles.ContainsKey(c);
 
-        public int this[int x, int y]
+        public bool CheckCoordinates(int x, int y) => CheckCoordinates(new Coordinate(x, y));
+
+        public int this[Coordinate c]
         {
             get
             {
-                if (!CheckCoordinates(x, y))
+                if (!CheckCoordinates(c))
                     throw new ArgumentOutOfRangeException();
 
-                return _tiles[x, y].Value;
+                return _tiles[c].Value;
             }
 
             set
             {
-                if (!CheckCoordinates(x, y))
+                if (!CheckCoordinates(c))
                     throw new ArgumentOutOfRangeException();
 
-                _tiles[x, y].Value = value;
+                _tiles[c].Value = value;
             }
         }
 
-        private void CreateTile(int x, int y) => _tiles[x, y] = new HexTile(x, y);
+        public int this[int x, int y] => this[new Coordinate(x, y)];
+
+        private void CreateTile(Coordinate c) => _tiles[c] = new HexTile(c);
+
+        private void CreateTile(int x, int y) => CreateTile(new Coordinate(x, y));
 
         private void Initialize()
         {
